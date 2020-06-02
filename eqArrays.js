@@ -1,4 +1,4 @@
-const assertEqual = function(actual, expected) {
+/*const assertEqual = function(actual, expected) {
   const pass = ':hourglass::hourglass::hourglass::hourglass:';
   const fail = ':octagonal_sign::octagonal_sign::octagonal_sign:';
   if (actual === expected) {
@@ -33,10 +33,10 @@ eqArrays([1, 2, 3], [3, 2, 1]) // => false
 
 eqArrays(["1", "2", "3"], ["1", "2", "3"]) // => true
 eqArrays(["1", "2", "3"], ["1", "2", 3]) // => false
-*/
+
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
 assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), true); // => should FAIL
 assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => should PASS
 assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true); // => should FAIL
-
+*/
 
