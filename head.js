@@ -1,12 +1,5 @@
-const assertEqual = function(actual, expected) {
-  const pass = ':hourglass::hourglass::hourglass::hourglass:';
-  const fail = ':octagonal_sign::octagonal_sign::octagonal_sign:';
-  if (actual === expected) {
-    console.log(`${pass} Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`${fail} Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const assertEqual = require('./assertEqual');
+
 // TEST CODE
 assertEqual("Nida", "Nida");
 assertEqual("Lighthouse Labs", "Bootcamp");
@@ -18,6 +11,8 @@ const head = function(array)
 let string = array[0];
 return string;
 }
-console.log(head([1,2,3]))
+/*console.log(head([1,2,3]))
 assertEqual(head([5,6,7]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");*/
+
+module.exports = head;
