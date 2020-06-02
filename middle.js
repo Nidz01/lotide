@@ -1,3 +1,4 @@
+
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
@@ -9,6 +10,7 @@ const eqArrays = function(array1, array2) {
   }
   return true;
 };
+
 const assertArraysEqual = function(actual, expected) {
   if(eqArrays(actual, expected)) {
     console.log(`✅✅✅ There is no middle: ${actual} === ${expected}`);
@@ -29,4 +31,7 @@ const middle = function(array) {
     return [middleIndex];
   }
 }
+/*assertArraysEqual(middle([10, 6, 4, 2, 3]), [4]);*/
+
+module.exports = middle;
 
