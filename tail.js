@@ -20,4 +20,4 @@ let string = array[array.length-1];
 return string;
 }
 
-module.export = tail;
+module.exports = tail;
