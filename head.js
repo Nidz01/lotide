@@ -1,4 +1,6 @@
 /*
+Create a function head which returns the first item in the array.
+Use assertEqual to write test cases for various scenarios. 
 // TEST CODE
 assertEqual("Nida", "Nida");
 assertEqual("Lighthouse Labs", "Bootcamp");
