@@ -1,17 +1,17 @@
 const assertEqual = function(actual, expected) {
   const pass = '✅️✅️✅️';
   const fail = '❌️❌️❌️';
-  if(actual.length === expected.length) {
-    let i=0;
-  while (i < actual.length){
-    if (actual[i] === expected[i]){
-      i++;
-      if(i === actual.length) {
-       console.log(`${pass} Assertion Passed: ${actual} === ${expected}`);
+  if (actual.length === expected.length) {
+    let i = 0;
+    while (i < actual.length) {
+      if (actual[i] === expected[i]) {
+        i++;
+        if (i === actual.length) {
+          console.log(`${pass} Assertion Passed: ${actual} === ${expected}`);
+        }
       }
     }
-  }
-   } else {
+  } else {
     console.log(`${fail} Assertion Failed: ${actual} !== ${expected}`);
   }
 };
