@@ -1,12 +1,6 @@
-const assertEqual = function(actual, expected) {
-  const pass = ':hourglass::hourglass::hourglass::hourglass:';
-  const fail = ':octagonal_sign::octagonal_sign::octagonal_sign:';
-  if (actual === expected) {
-    console.log(`${pass} Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`${fail} Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+/* Function that checks if incoming arrays are equal and
+then return true (if equal) and false(if false) accordingly. */
+
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
@@ -19,6 +13,12 @@ const eqArrays = function(array1, array2) {
   return true;
 };
 
+/*
+Implement the definition for function eqObjects which will take in two objects and 
+returns true or false, based on a perfect match.
+// Returns true if both objects have identical keys with identical values.
+// Otherwise you get back a big fat false!
+*/
 const eqObjects = function(object1, object2) {
   if (Object.keys(object1).length !== Object.keys(object2).length) {
     return false;
@@ -33,14 +33,22 @@ const eqObjects = function(object1, object2) {
   }
   return true;
 }
+
+/*
+Implement assertObjectsEqual which will take in two objects 
+and console.log an appropriate message to the console. 
+*/
 const assertObjectsEqual = function(actual, expected) {
   const inspect = require('util').inspect;
   if (eqObjects(actual, expected)) {
     console.log(`✅✅✅ Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
   } else {
-    console.log(`🛑🛑🛑 Assertion failed: ${inspect(actual)} !== ${inspect(expected)}`);
+    console.log(`❌️❌️❌️' Assertion failed: ${inspect(actual)} !== ${inspect(expected)}`);
   }
 }
+
+/* TEST CASES */
+
  assertObjectsEqual({a: [1]}, { a: [1]});
  assertObjectsEqual({a: 1}, { a: [1]});
  assertObjectsEqual({a: "1", b: 2}, {b: 2,  a: "1"});
