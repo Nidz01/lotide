@@ -12,10 +12,5 @@ const head = function(array)
 let string = array[0];
 return string;
 }
-/*onsole.log(head([1,2,3]));
-console.log(head([]));
-console.log(head([1]));
-assertEqual(head([5,6,7]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");*/
 
 module.exports = head;
