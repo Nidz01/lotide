@@ -1,4 +1,4 @@
-const assertEqual = require('./assertEqual');
+const assertEqual = require('../assertEqual');
 const countLetters = require('../countLetters');
 
 assertEqual(countLetters('Nida is a girl'), 12);
