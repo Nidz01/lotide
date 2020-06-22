@@ -1,12 +1,7 @@
-const assertEqual = function(actual, expected) {
-  const pass = ':hourglass::hourglass::hourglass::hourglass:';
-  const fail = ':octagonal_sign::octagonal_sign::octagonal_sign:';
-  if (actual === expected) {
-    console.log(`${pass} Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`${fail} Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+/*
+take a string and count the number of letters in it
+*/
+
 const countLetters = function(string) {
   const result = new Object();
   string = string.split(" ").join("");
@@ -21,4 +16,5 @@ const countLetters = function(string) {
   return result;
 }
 
-console.log(countLetters('Nida is a girl'));
+
+module.exports = countLetters;
